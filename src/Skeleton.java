@@ -1,23 +1,19 @@
-public class Boss extends GameEntity{
-    Weapon weapon = new Weapon();
+public class Skeleton extends Boss{
+    int arrow;
 
-    public Weapon getWeapon() {
-        return weapon;
+    public int getArrow() {
+        return arrow;
     }
 
-    public void setWeapon(Weapon weapon) {
-        this.weapon = weapon;
+    public void setArrow(int arrow) {
+        this.arrow = arrow;
     }
 
     public String printInfo(){
         return "\nHealth: " + getHeath() +
                 "\nDamage: " + getDamage() +
+                "\nArrow: " + getArrow() +
                 "\nWeapon type: " + weapon.getTapeWeapon() +
                 "\nWeapon name: " + weapon.getNameWeapon();
     }
-
-    public String helloWorld(){
-        return "";
-    }
-
 }
